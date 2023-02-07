@@ -166,7 +166,7 @@ JOIN::optimize(OptimizePhase phase)
     if (phase == OptimizePhase::Beginning || phase == OptimizePhase::Before_LOJ_Transform)
     {
       assert(tables == 0 && primary_tables == 0 && tables_list == (TABLE_LIST*)1);
-      
+
       // to prevent double initialization on EXPLAIN
       if (optimized)
         DBUG_RETURN(0);

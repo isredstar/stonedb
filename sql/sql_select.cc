@@ -102,7 +102,7 @@ uint find_shortest_key(TABLE *table, const key_map *usable_keys);
     Such queries are executed with a more direct code path.
 */
 bool handle_query(THD *thd, LEX *lex, Query_result *result, ulonglong added_options, 
-	              ulonglong removed_options, int is_optimize_after_tianmu, int free_join_from_bh)
+	              ulonglong removed_options, int is_optimize_after_tianmu, int free_join_from_tianmu)
 {
   DBUG_ENTER("handle_query");
 
